@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scrum Artifacts</title>
+  styles.css
+</head>
+<body>
+  <header>
+    <div class="subtitle">Scrum essentials — artifacts & commitments</div>
+    <h1>Scrum Artifacts</h1>
+  </header>
+
+  <main>
+    <section class="grid">
+      <!-- Product Backlog -->
+      <article class="card">
+        <div class="badge">Artifact</div>
+        <h2>Product Backlog</h2>
+        <p class="meta"><strong>Owner:</strong> Product Owner</p>
+        <p>An ordered, evolving list of everything needed in the product. It is the single source of work for the Scrum Team.</p>
+        <ul>
+          <li>Dynamic; refined continuously as market, product, and technology change.</li>
+          <li>Items ordered by value, risk, dependencies, and strategy.</li>
+          <li>Contains features, enhancements, bug fixes, technical work, and research.</li>
+        </ul>
+      </article>
+
+      <!-- Sprint Backlog -->
+      <article class="card">
+        <div class="badge">Artifact</div>
+        <h2>Sprint Backlog</h2>
+        <p class="meta"><strong>Owner:</strong> Developers</p>
+        <p>Selected Product Backlog items for the current Sprint, plus a plan for delivering the Increment and achieving the Sprint Goal.</p>
+        <ul>
+          <li>Created during Sprint Planning; updated throughout the Sprint.</li>
+          <li>Shows work and actionable tasks to meet the Sprint Goal.</li>
+          <li>Highly visible, reflecting current status and daily insights.</li>
+        </ul>
+      </article>
+
+      <!-- Increment -->
+      <article class="card">
+        <div class="badge">Artifact</div>
+        <h2>Increment</h2>
+        <p class="meta"><strong>Purpose:</strong> Usable, potentially shippable product</p>
+        <p>The sum of all completed Product Backlog items that meet the Definition of Done. Each Increment adds to prior increments and must be in a releasable state.</p>
+        <ul>
+          <li>Meets the team's <em>Definition of Done</em> (DoD).</li>
+          <li>May be released at the end of the Sprint or at any time.</li>
+          <li>Provides transparency for inspection and adaptation.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="commitments">
+      <h3>Commitments (per Scrum Guide)</h3>
+      <div class="pair">
+        <div><strong>Product Backlog</strong></div>
+        <span class="sep" aria-hidden="true">⟶</span>
+        <div><strong>Product Goal</strong></div>
+      </div>
+      <div class="pair">
+        <div><strong>Sprint Backlog</strong></div>
+        <span class="sep" aria-hidden="true">⟶</span>
+        <div><strong>Sprint Goal</strong></div>
+      </div>
+      <div class="pair">
+        <div><strong>Increment</strong></div>
+        <span class="sep" aria-hidden="true">⟶</span>
+        <div><strong>Definition of Done</strong></div>
+      </div>
+      <p class="muted">These commitments increase transparency and focus; they align outcomes with intent.</p>
+    </section>
+
+    <section class="diagram" aria-labelledby="diagram-title">
+      <h3 id="diagram-title">Relationship Diagram</h3>
+      <div class="flow" role="list">
+        <div class="node" role="listitem">
+          <div class="title">Product Backlog</div>
+          <div class="desc">Ordered ideas & work</div>
+        </div>
+        <div class="arrow" aria-hidden="true">➡️</div>
+        <div class="node" role="listitem">
+          <div class="title">Sprint Backlog</div>
+          <div class="desc">Selected work + plan</div>
+        </div>
+        <div class="arrow" aria-hidden="true">➡️</div>
+        <div class="node" role="listitem">
+          <div class="title">Increment</div>
+          <div class="desc">Done, usable value</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="notes">
+      <h3>Notes</h3>
+      <ul>
+        <li>Artifacts maximize transparency, enabling inspection and adaptation.</li>
+        <li>The Increment is additive and must meet the Definition of Done.</li>
+        <li>The Product Owner manages the Product Backlog; Developers own the Sprint Backlog.</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
