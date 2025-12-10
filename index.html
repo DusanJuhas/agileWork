@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agilní práce / Agile Work</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1 class="app-title">Agilní práce / Agile Work</h1>
+    <div class="lang-switch" aria-label="Přepínač jazyka / Language switch">
+      <button id="btn-cs" class="lang-btn" data-lang="cs" title="Čeština">CZ</button>
+      <button id="btn-en" class="lang-btn" data-lang="en" title="English">EN</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav id="tree" class="tree" aria-label="Navigační strom / Navigation tree"></nav>
+    </aside>
+    <main class="content">
+      <iframe id="contentFrame" class="content-frame" title="Obsah / Content" srcdoc="<h2>Vítejte / Welcome</h2><p>Zvolte položku ze stromu vlevo. / Choose a topic from the tree on the left.</p>"></iframe>
+    </main>
+  </div>
+
+  <script src="script-nofetch.js"></script>
+</body>
+</html>
