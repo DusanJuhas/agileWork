@@ -1,1 +1,111 @@
-<h2>Artefakty</h2><p>Hlavní artefakty: Product Backlog...</p>
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Artefakty Scrum</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="subtitle">Základy Scrumu — artefakty a závazky</div>
+    <h1>Artefakty Scrum</h1>
+  </header>
+
+  <main>
+    <section class="grid">
+      <article class="card">
+        <div class="badge">Artefakt</div>
+        <h2>Produktový backlog</h2>
+        <p class="meta"><strong>Vlastník:</strong> Produktový vlastník</p>
+        <p>Seřazený, vyvíjející se seznam všeho, co je potřeba pro produkt. Je jediným zdrojem práce pro Scrum tým.</p>
+        <ul>
+          <li>Dynamický; průběžně upravovaný podle změn trhu, produktu a technologie.</li>
+          <li>Položky seřazené podle hodnoty, rizika, závislostí a strategie.</li>
+          <li>Obsahuje funkce, vylepšení, opravy chyb, technické práce a výzkum.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="badge">Artefakt</div>
+        <h2>Sprintový backlog</h2>
+        <p class="meta"><strong>Vlastník:</strong> Vývojáři</p>
+        <p>Vybrané položky produktového backlogu pro aktuální sprint a plán pro dodání přírůstku a dosažení cíle sprintu.</p>
+        <ul>
+          <li>Vytvořen během plánování sprintu; aktualizován po celou dobu sprintu.</li>
+          <li>Ukazuje práci a konkrétní úkoly pro dosažení cíle sprintu.</li>
+          <li>Vysoce viditelný, odráží aktuální stav a každodenní poznatky.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="badge">Artefakt</div>
+        <h2>Přírůstek</h2>
+        <p class="meta"><strong>Účel:</strong> Použitelný, potenciálně dodavatelný produkt</p>
+        <p>Součet všech dokončených položek produktového backlogu, které splňují definici hotového. Každý přírůstek se přidává k předchozím a musí být ve stavu připraveném k vydání.</p>
+        <ul>
+          <li>Splňuje týmovou definici hotového (DoD).</li>
+          <li>Může být vydán na konci sprintu nebo kdykoli.</li>
+          <li>Zajišťuje transparentnost pro kontrolu a přizpůsobení.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="commitments">
+      <h3>Závazky (dle Scrum Guide)</h3>
+      <div class="pair">
+        <div><strong>Produktový backlog</strong></div>
+        <span class="sep">⟶</span>
+        <div><strong>Cíl produktu</strong></div>
+      </div>
+      <div class="pair">
+        <div><strong>Sprintový backlog</strong></div>
+        <span class="sep">⟶</span>
+        <div><strong>Cíl sprintu</strong></div>
+      </div>
+      <div class="pair">
+        <div><strong>Přírůstek</strong></div>
+        <span class="sep">⟶</span>
+        <div><strong>Definice hotového</strong></div>
+      </div>
+      <p class="muted">Tyto závazky zvyšují transparentnost a zaměření; sladí výsledky se záměrem.</p>
+    </section>
+
+    <section class="diagram">
+      <h3>Diagram vztahů</h3>
+      <div class="flow">
+        <div class="node">
+          <div class="title">Produktový backlog</div>
+          <div class="desc">Seřazené nápady a práce</div>
+        </div>
+        <div class="arrow">➡️</div>
+        <div class="node">
+          <div class="title">Sprintový backlog</div>
+          <div class="desc">Vybraná práce + plán</div>
+        </div>
+        <div class="arrow">➡️</div>
+        <div class="node">
+          <div class="title">Přírůstek</div>
+          <div class="desc">Hotová, použitelná hodnota</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="notes">
+      <h3>Poznámky</h3>
+      <ul>
+        <li>Artefakty maximalizují transparentnost, umožňují kontrolu a přizpůsobení.</li>
+        <li>Přírůstek je aditivní a musí splňovat definici hotového.</li>
+        <li>Produktový vlastník spravuje produktový backlog; vývojáři vlastní sprintový backlog.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Vytvořeno pro rychlý přehled. Stylizaci lze libovolně upravit.</p>
+    <button id="toggleTheme" type="button" aria-pressed="false">Přepnout motiv</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
