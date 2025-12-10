@@ -1,1 +1,86 @@
-<h2>Kanban</h2><p>Kanban visualizes flow of work...</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kanban</title>
+</head>
+<body>
+
+  <h2>What is Kanban?</h2>
+	<p>Kanban is a system for visualizing work, limiting work in progress (WIP), and optimizing flow. 
+	It helps teams manage tasks efficiently by making the status of work visible and encouraging continuous improvement.</p>
+	
+  <h2>Core Principles</h2>
+  <h3>Visualize Work</h3>
+	<p>Use a Kanban board with columns representing stages of the workflow (e.g., To Do → In Progress → Done). Tasks are represented by cards that move across columns.</p>
+
+  <h3>Limit Work in Progress (WIP)</h3>
+	<p>Set limits on how many tasks can be in each stage at once. This prevents overload and ensures focus.</p>
+
+  <h3>Manage Flow</h3>
+	<p>Track how tasks move through the process and identify bottlenecks to improve efficiency.</p>
+
+  <h3>Make Process Policies Explicit</h3>
+	<p>Define clear rules for how work moves between stages.</p>
+
+  <h3>Improve Collaboratively, Evolve Experimentally</h3>
+	<p>Use metrics and feedback to continuously improve the process.</p>
+	
+  <h2>Kanban Board Example</h2>
+
+  <table border="1" cellpadding="6" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Backlog</th>
+        <th>To Do</th>
+        <th>In Progress</th>
+        <th>Review</th>
+        <th>Done</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr valign="top">
+        <td>
+          <ul>
+            <li>Collect requirements</li>
+            <li>Define acceptance criteria</li>
+            <li>Draft architecture notes</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Create user story #101</li>
+            <li>Prepare sprint plan outline</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Implement login form</li>
+            <li>Write unit tests for auth</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Code review: API endpoints</li>
+            <li>Validate test coverage</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Project setup</li>
+            <li>CI pipeline skeleton</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Working Agreements (Policies)</h3>
+  <ol>
+    <li>Limit Work In Progress in <em>In Progress</em> to 3 items.</li>
+    <li>Only pull new work when capacity is available.</li>
+    <li>Each card must include a clear definition of done.</li>
+  </ol>
+
+</body>
+</html>
