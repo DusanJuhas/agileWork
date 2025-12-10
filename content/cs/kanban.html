@@ -1,1 +1,76 @@
-<h2>Kanban</h2><p>Kanban vizualizuje tok práce...</p>
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kanban – Přehled</title>
+</head>
+<body>
+  <h1>Kanban</h1>
+  <p>Kanban je systém pro <strong>vizualizaci práce</strong>, <strong>omezení rozpracované práce (WIP)</strong> a <strong>optimalizaci toku</strong>. Pomáhá týmům efektivně řídit úkoly tím, že zviditelňuje stav práce a podporuje neustálé zlepšování.</p>
+
+  <h2>Základní principy</h2>
+  <ul>
+    <li><strong>Vizualizace práce:</strong> Použijte Kanban tabuli se sloupci představujícími fáze pracovního postupu (např. <em>K udělání → Probíhá → Hotovo</em>). Úkoly jsou reprezentovány kartami, které se přesouvají mezi sloupci.</li>
+    <li><strong>Omezení rozpracované práce (WIP):</strong> Nastavte limity, kolik úkolů může být současně v každé fázi. To zabraňuje přetížení a zajišťuje soustředění.</li>
+    <li><strong>Řízení toku:</strong> Sledujte, jak se úkoly pohybují procesem, a identifikujte úzká místa pro zlepšení efektivity.</li>
+    <li><strong>Zpřehlednění pravidel procesu:</strong> Definujte jasná pravidla pro přesun práce mezi fázemi.</li>
+    <li><strong>Společné zlepšování, postupné experimentování:</strong> Využívejte metriky a zpětnou vazbu pro neustálé zlepšování procesu.</li>
+  </ul>
+
+  <h2>Příklad Kanban tabule</h2>
+  <table border="1" cellpadding="6" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Backlog</th>
+        <th>K udělání</th>
+        <th>Probíhá</th>
+        <th>Kontrola</th>
+        <th>Hotovo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr valign="top">
+        <td>
+          <ul>
+            <li>Shromáždit požadavky</li>
+            <li>Definovat akceptační kritéria</li>
+            <li>Návrh architektury</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Vytvořit uživatelský příběh #101</li>
+            <li>Připravit osnovu sprintu</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Implementovat přihlašovací formulář</li>
+            <li>Napsat jednotkové testy pro autentizaci</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Kontrola kódu: API endpointy</li>
+            <li>Ověřit pokrytí testy</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Nastavení projektu</li>
+            <li>Kostra CI pipeline</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Pracovní dohody (Pravidla)</h2>
+  <ol>
+    <li>Omezit rozpracovanou práci ve sloupci <em>Probíhá</em> na 3 položky.</li>
+    <li>Novou práci lze přidávat pouze při volné kapacitě.</li>
+    <li>Každý úkol musí obsahovat jasnou definici „hotovo“.</li>
+  </ol>
+
+</body>
+</html>
